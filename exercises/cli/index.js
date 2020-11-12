@@ -1,4 +1,5 @@
-// install any missing modules
+
+ 
 const program = require('commander')
 const { prompt } = require('inquirer')
 const {newContactPrompts} = require('./prompts')
@@ -38,7 +39,7 @@ program
     ])
       .then(({selected}) => {
         const contact = contacts[selected]
-        console.log(JSON.stringify(contact, null, 2))
+        console.log(JSON.stringify(contact))
       })
   })
 
